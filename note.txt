@@ -18,3 +18,5 @@ commit những thay đổi (staging area => local repository): git commit -m "me
 tạo ra 1 branch mới: git branch -b branch-name
 
 Cập nhật code từ remote về local: git pull
+
+git merge master
