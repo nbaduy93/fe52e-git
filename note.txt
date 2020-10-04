@@ -11,3 +11,7 @@ Kiểm tra trạng thái của source: git status
 
 
 commit những thay đổi (staging area => local repository): git commit -m "mesage"
+
+Đẩy code lên trên sever (local repository => remote...)
+
+tạo ra 1 branch mới: git branch -b branch-name
