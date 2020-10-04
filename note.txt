@@ -1,0 +1,13 @@
+Khởi tạo git: git init
+Kết nối project với repo: git remote add orgin url-repo
+
+Kiểm tra trạng thái của source: git status
++ file: màu đỏ: file đã thay đổi nhưng chưa save (woriking copygit)
+
+
+
+
+
+
+
+commit những thay đổi (staging area => local repository): git commit -m "mesage"
