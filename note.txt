@@ -5,13 +5,16 @@ Kiểm tra trạng thái của source: git status
 + file: màu đỏ: file đã thay đổi nhưng chưa save (woriking copygit)
 
 
+Lần đầu sử dụng phải nhập vào: 
 
-
-
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
 
 
 commit những thay đổi (staging area => local repository): git commit -m "mesage"
 
-Đẩy code lên trên sever (local repository => remote...)
+Đẩy code lên trên sever (local repository => remote repo): git push -u orgin master
 
 tạo ra 1 branch mới: git branch -b branch-name
+
+Cập nhật code từ remote về local: git pull
