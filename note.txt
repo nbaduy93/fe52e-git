@@ -20,10 +20,47 @@ tạo ra 1 branch mới: git branch -b branch-name
 Cập nhật code từ remote về local: git pull
 
 git merge master
-Cách fix conflict khi tạo pull request:
+
+
+Cách fix conflict khi tạo Pull request:
 B1: git checkout master
 B2: git pull
 B3: git checkout branch-conflict
 B4: git merge master
-B5: flix conflict
-B6: add, commit, push
+B5: fix conflict : dung VS chon code moi hay code cũ
+B6: git add, commit, push.
+
+Stash: lưu trữ code dưới local
+B1: git add những thay đổi muốn lưu
+B2: git Stash
+Stash: Lấy lại những lưu trữ trong Stash
+B1: git stash list
+B2: git stash apply stash{0} (lấy ra những code vẫn còn trong stash)
+git stash pop stash{0} (Lấy ra và code trong stash bị mất)
+
+
+
+
+Khởi tạo git: git init
+Kết nối project với repo: git remote add origin url-repo
+
+Kiểm tra trạng thái của source: git status
++ file màu đỏ: file đã thay đổi nhưng chưa save (working copy)
++ file màu xanh: file đã thay đổi và đã được save (staging area)
+
+Save những file đã thay đổi (working copy => staging area): git add file-name hoặc .(tất cả file)
+
+commit những thay đổi (staging area => local repository): git commit -m "message"
+
+Lần đầu tiên xài git cần chạy 2 lệnh này:
+git config --global user.name "name"
+git config --global user.email "email"
+
+Đẩy code lên trên server (local repository => remote repository): git push -u origin master
+
+Tạo ra 1 branch mới: git checkout -b branch-name
+Chuyển branch: git checkout branch-name
+
+Cập nhập code từ remote về local: git pull
+
+
