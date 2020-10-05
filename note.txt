@@ -20,3 +20,10 @@ tạo ra 1 branch mới: git branch -b branch-name
 Cập nhật code từ remote về local: git pull
 
 git merge master
+Cách fix conflict khi tạo pull request:
+B1: git checkout master
+B2: git pull
+B3: git checkout branch-conflict
+B4: git merge master
+B5: flix conflict
+B6: add, commit, push
